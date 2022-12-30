@@ -1,0 +1,49 @@
+$date
+	Fri Dec 30 15:50:38 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb_four_bit_comparator $end
+$var wire 1 ! aLTb $end
+$var wire 1 " aGTb $end
+$var wire 1 # aEQb $end
+$var reg 40 $ Ans [39:0] $end
+$var reg 4 % a [3:0] $end
+$var reg 4 & b [3:0] $end
+$scope module MK $end
+$var wire 4 ' a [3:0] $end
+$var wire 4 ( b [3:0] $end
+$var wire 1 ) eq_in $end
+$var wire 1 # eq_out $end
+$var wire 1 * gt_in $end
+$var wire 1 " gt_out $end
+$var wire 1 + lt_in $end
+$var wire 1 ! lt_out $end
+$var wire 1 , altb $end
+$var wire 1 - agtb $end
+$var wire 1 . aeqb $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0.
+1-
+0,
+0+
+0*
+1)
+b1 (
+b100 '
+b1 &
+b100 %
+b110000100100000001111100010000001100010 $
+0#
+1"
+0!
+$end
+#20

@@ -1,0 +1,50 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+S_0x7fb8727045c0 .scope module, "four_bit_comparator" "four_bit_comparator" 2 3;
+ .timescale -8 -9;
+    .port_info 0 /INPUT 4 "a";
+    .port_info 1 /INPUT 4 "b";
+    .port_info 2 /INPUT 1 "eq_in";
+    .port_info 3 /INPUT 1 "gt_in";
+    .port_info 4 /INPUT 1 "lt_in";
+    .port_info 5 /OUTPUT 1 "eq_out";
+    .port_info 6 /OUTPUT 1 "gt_out";
+    .port_info 7 /OUTPUT 1 "lt_out";
+o0x7fb873032158 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x6000018c8000 .functor AND 1, L_0x6000002c0000, o0x7fb873032158, C4<1>, C4<1>;
+o0x7fb8730321b8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x6000018c8070 .functor AND 1, o0x7fb8730321b8, L_0x6000002c0000, C4<1>, C4<1>;
+L_0x6000018c80e0 .functor OR 1, L_0x6000002c0140, L_0x6000018c8070, C4<0>, C4<0>;
+o0x7fb873032218 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x6000018c8150 .functor AND 1, o0x7fb873032218, L_0x6000002c0000, C4<1>, C4<1>;
+L_0x6000018c81c0 .functor OR 1, L_0x6000002c00a0, L_0x6000018c8150, C4<0>, C4<0>;
+v0x6000001c4000_0 .net *"_ivl_12", 0 0, L_0x6000018c8150;  1 drivers
+v0x6000001c4090_0 .net *"_ivl_8", 0 0, L_0x6000018c8070;  1 drivers
+o0x7fb873032068 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0x6000001c4120_0 .net "a", 3 0, o0x7fb873032068;  0 drivers
+v0x6000001c41b0_0 .net "aeqb", 0 0, L_0x6000002c0000;  1 drivers
+v0x6000001c4240_0 .net "agtb", 0 0, L_0x6000002c0140;  1 drivers
+v0x6000001c42d0_0 .net "altb", 0 0, L_0x6000002c00a0;  1 drivers
+o0x7fb873032128 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0x6000001c4360_0 .net "b", 3 0, o0x7fb873032128;  0 drivers
+v0x6000001c43f0_0 .net "eq_in", 0 0, o0x7fb873032158;  0 drivers
+v0x6000001c4480_0 .net "eq_out", 0 0, L_0x6000018c8000;  1 drivers
+v0x6000001c4510_0 .net "gt_in", 0 0, o0x7fb8730321b8;  0 drivers
+v0x6000001c45a0_0 .net "gt_out", 0 0, L_0x6000018c80e0;  1 drivers
+v0x6000001c4630_0 .net "lt_in", 0 0, o0x7fb873032218;  0 drivers
+v0x6000001c46c0_0 .net "lt_out", 0 0, L_0x6000018c81c0;  1 drivers
+L_0x6000002c0000 .cmp/eq 4, o0x7fb873032068, o0x7fb873032128;
+L_0x6000002c00a0 .cmp/gt 4, o0x7fb873032128, o0x7fb873032068;
+L_0x6000002c0140 .cmp/gt 4, o0x7fb873032068, o0x7fb873032128;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "four_bit_comparator_.v";
