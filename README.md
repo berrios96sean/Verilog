@@ -7,9 +7,9 @@ I am using Icarus Verilog for these projects and using GTKWave as the waveform v
 # Working gates with testbenches 
 
 [xnor-gate](https://github.com/berrios96sean/Verilog/tree/main/xnor-gate)<br/>
-[simple-and-gate]__
-[nor-gate]__
-[inverter]__
-[four-bit-comparator]__
-[Vectors]__
-[7458-Chip]__
+[simple-and-gate]<br/>
+[nor-gate]<br/>
+[inverter]<br/>
+[four-bit-comparator]<br/>
+[Vectors]<br/>
+[7458-Chip]<br/>
