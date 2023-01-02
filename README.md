@@ -22,4 +22,5 @@ I am using Icarus Verilog for these projects and using GTKWave as the waveform v
 [Half Word Splitter](https://github.com/berrios96sean/Verilog/tree/main/Vectors/half_word_splitter)<br/>
 [Bit Vector Reversal](https://github.com/berrios96sean/Verilog/tree/main/Vectors/bit-vector-reversal)<br/>
 [Bitwise Logical Operators](https://github.com/berrios96sean/Verilog/tree/main/Vectors/bitwise-logical-operators)<br/>
+[Four Input Gates](https://github.com/berrios96sean/Verilog/tree/main/Vectors/four-input-gates)<br/>
 
