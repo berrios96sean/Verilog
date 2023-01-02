@@ -48,3 +48,4 @@ module half_word_splitter_tb;
     end
     
 endmodule
+
