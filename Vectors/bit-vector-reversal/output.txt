@@ -1,0 +1,33 @@
+VCD info: dumpfile reverse_32_bit_vector.vcd opened for output.
+Input = 12153524
+Output = 24351512
+
+
+Input = c0895e81
+Output = 815e89c0
+
+
+Input = 8484d609
+Output = 09d68484
+
+
+Input = b1f05663
+Output = 6356f0b1
+
+
+Input = 06b97b0d
+Output = 0d7bb906
+
+
+Input = 46df998d
+Output = 8d99df46
+
+
+Input = b2c28465
+Output = 6584c2b2
+
+
+Input = 89375212
+Output = 12523789
+
+
