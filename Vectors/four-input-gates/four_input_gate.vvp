@@ -1,0 +1,114 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+S_0x7fda67708f90 .scope module, "testbench" "testbench" 2 13;
+ .timescale 0 0;
+v0x7fda6771f2d0_0 .var "in", 3 0;
+v0x7fda6771f360_0 .net "out_and", 0 0, L_0x7fda6771fab0;  1 drivers
+v0x7fda6771f3f0_0 .net "out_or", 0 0, L_0x7fda67720180;  1 drivers
+v0x7fda6771f480_0 .net "out_xor", 0 0, L_0x7fda67720750;  1 drivers
+S_0x7fda67707000 .scope begin, "$ivl_for_loop0" "$ivl_for_loop0" 2 40, 2 40 0, S_0x7fda67708f90;
+ .timescale 0 0;
+v0x7fda67709100_0 .var/i "i", 31 0;
+S_0x7fda6771dfe0 .scope module, "dut" "four_input_gate" 2 24, 2 1 0, S_0x7fda67708f90;
+ .timescale 0 0;
+    .port_info 0 /INPUT 4 "in";
+    .port_info 1 /OUTPUT 1 "out_and";
+    .port_info 2 /OUTPUT 1 "out_or";
+    .port_info 3 /OUTPUT 1 "out_xor";
+L_0x7fda6771f6d0 .functor AND 1, L_0x7fda6771f530, L_0x7fda6771f630, C4<1>, C4<1>;
+L_0x7fda6771f920 .functor AND 1, L_0x7fda6771f6d0, L_0x7fda6771f800, C4<1>, C4<1>;
+L_0x7fda6771fab0 .functor AND 1, L_0x7fda6771f920, L_0x7fda6771fa10, C4<1>, C4<1>;
+L_0x7fda6771fd50 .functor OR 1, L_0x7fda6771fbe0, L_0x7fda6771fcb0, C4<0>, C4<0>;
+L_0x7fda6771f8a0 .functor OR 1, L_0x7fda6771fd50, L_0x7fda6771fe60, C4<0>, C4<0>;
+L_0x7fda67720180 .functor OR 1, L_0x7fda6771f8a0, L_0x7fda677200e0, C4<0>, C4<0>;
+L_0x7fda677203f0 .functor XOR 1, L_0x7fda677202b0, L_0x7fda67720350, C4<0>, C4<0>;
+L_0x7fda677205c0 .functor XOR 1, L_0x7fda677203f0, L_0x7fda67720520, C4<0>, C4<0>;
+L_0x7fda67720750 .functor XOR 1, L_0x7fda677205c0, L_0x7fda677206b0, C4<0>, C4<0>;
+v0x7fda6771e210_0 .net *"_ivl_1", 0 0, L_0x7fda6771f530;  1 drivers
+v0x7fda6771e2c0_0 .net *"_ivl_11", 0 0, L_0x7fda6771fa10;  1 drivers
+v0x7fda6771e370_0 .net *"_ivl_15", 0 0, L_0x7fda6771fbe0;  1 drivers
+v0x7fda6771e430_0 .net *"_ivl_17", 0 0, L_0x7fda6771fcb0;  1 drivers
+v0x7fda6771e4e0_0 .net *"_ivl_18", 0 0, L_0x7fda6771fd50;  1 drivers
+v0x7fda6771e5d0_0 .net *"_ivl_21", 0 0, L_0x7fda6771fe60;  1 drivers
+v0x7fda6771e680_0 .net *"_ivl_22", 0 0, L_0x7fda6771f8a0;  1 drivers
+v0x7fda6771e730_0 .net *"_ivl_25", 0 0, L_0x7fda677200e0;  1 drivers
+v0x7fda6771e7e0_0 .net *"_ivl_29", 0 0, L_0x7fda677202b0;  1 drivers
+v0x7fda6771e8f0_0 .net *"_ivl_3", 0 0, L_0x7fda6771f630;  1 drivers
+v0x7fda6771e9a0_0 .net *"_ivl_31", 0 0, L_0x7fda67720350;  1 drivers
+v0x7fda6771ea50_0 .net *"_ivl_32", 0 0, L_0x7fda677203f0;  1 drivers
+v0x7fda6771eb00_0 .net *"_ivl_35", 0 0, L_0x7fda67720520;  1 drivers
+v0x7fda6771ebb0_0 .net *"_ivl_36", 0 0, L_0x7fda677205c0;  1 drivers
+v0x7fda6771ec60_0 .net *"_ivl_39", 0 0, L_0x7fda677206b0;  1 drivers
+v0x7fda6771ed10_0 .net *"_ivl_4", 0 0, L_0x7fda6771f6d0;  1 drivers
+v0x7fda6771edc0_0 .net *"_ivl_7", 0 0, L_0x7fda6771f800;  1 drivers
+v0x7fda6771ef50_0 .net *"_ivl_8", 0 0, L_0x7fda6771f920;  1 drivers
+v0x7fda6771efe0_0 .net "in", 3 0, v0x7fda6771f2d0_0;  1 drivers
+v0x7fda6771f090_0 .net "out_and", 0 0, L_0x7fda6771fab0;  alias, 1 drivers
+v0x7fda6771f130_0 .net "out_or", 0 0, L_0x7fda67720180;  alias, 1 drivers
+v0x7fda6771f1d0_0 .net "out_xor", 0 0, L_0x7fda67720750;  alias, 1 drivers
+L_0x7fda6771f530 .part v0x7fda6771f2d0_0, 0, 1;
+L_0x7fda6771f630 .part v0x7fda6771f2d0_0, 1, 1;
+L_0x7fda6771f800 .part v0x7fda6771f2d0_0, 2, 1;
+L_0x7fda6771fa10 .part v0x7fda6771f2d0_0, 3, 1;
+L_0x7fda6771fbe0 .part v0x7fda6771f2d0_0, 0, 1;
+L_0x7fda6771fcb0 .part v0x7fda6771f2d0_0, 1, 1;
+L_0x7fda6771fe60 .part v0x7fda6771f2d0_0, 2, 1;
+L_0x7fda677200e0 .part v0x7fda6771f2d0_0, 3, 1;
+L_0x7fda677202b0 .part v0x7fda6771f2d0_0, 0, 1;
+L_0x7fda67720350 .part v0x7fda6771f2d0_0, 1, 1;
+L_0x7fda67720520 .part v0x7fda6771f2d0_0, 2, 1;
+L_0x7fda677206b0 .part v0x7fda6771f2d0_0, 3, 1;
+    .scope S_0x7fda67708f90;
+T_0 ;
+    %vpi_call 2 32 "$dumpfile", "four_input_gate.vcd" {0 0 0};
+    %vpi_call 2 33 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7fda67708f90 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x7fda67708f90;
+T_1 ;
+    %vpi_call 2 38 "$display", "Generating 8 random inputs" {0 0 0};
+    %fork t_1, S_0x7fda67707000;
+    %jmp t_0;
+    .scope S_0x7fda67707000;
+t_1 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x7fda67709100_0, 0, 32;
+T_1.0 ;
+    %load/vec4 v0x7fda67709100_0;
+    %cmpi/s 8, 0, 32;
+    %jmp/0xz T_1.1, 5;
+    %vpi_func 2 41 "$random" 32 {0 0 0};
+    %pad/s 4;
+    %store/vec4 v0x7fda6771f2d0_0, 0, 4;
+    %delay 1, 0;
+    %vpi_call 2 43 "$display", "Input = %h", v0x7fda6771f2d0_0 {0 0 0};
+    %vpi_call 2 44 "$display", "Output" {0 0 0};
+    %vpi_call 2 45 "$display", "out_and = %h", v0x7fda6771f360_0 {0 0 0};
+    %vpi_call 2 46 "$display", "out_or = %h", v0x7fda6771f3f0_0 {0 0 0};
+    %vpi_call 2 47 "$display", "out_xor = %h", v0x7fda6771f480_0 {0 0 0};
+    %vpi_call 2 48 "$display", "\012" {0 0 0};
+    ; show_stmt_assign_vector: Get l-value for compressed += operand
+    %load/vec4 v0x7fda67709100_0;
+    %pushi/vec4 1, 0, 32;
+    %add;
+    %store/vec4 v0x7fda67709100_0, 0, 32;
+    %jmp T_1.0;
+T_1.1 ;
+    %end;
+    .scope S_0x7fda67708f90;
+t_0 %join;
+    %vpi_call 2 51 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "four_input_gate.v";
