@@ -1,0 +1,80 @@
+$date
+	Mon Jan  2 13:25:16 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 1 ! out_or_logical $end
+$var wire 3 " out_or_bitwise [2:0] $end
+$var wire 6 # out_not [5:0] $end
+$var reg 3 $ a [2:0] $end
+$var reg 3 % b [2:0] $end
+$scope module dut $end
+$var wire 3 & a [2:0] $end
+$var wire 3 ' b [2:0] $end
+$var wire 3 ( out_or_bitwise [2:0] $end
+$var wire 1 ! out_or_logical $end
+$var wire 6 ) out_not [5:0] $end
+$upscope $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 * i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 *
+b111011 )
+b100 (
+b0 '
+b100 &
+b0 %
+b100 $
+b111011 #
+b100 "
+1!
+$end
+#1
+b1 "
+b1 (
+b111110 #
+b111110 )
+b1 $
+b1 &
+b1 *
+#2
+b10 *
+#3
+b11 "
+b11 (
+b111100 #
+b111100 )
+b11 $
+b11 &
+b11 *
+#4
+b101 "
+b101 (
+b111010 #
+b111010 )
+b101 $
+b101 &
+b100 *
+#5
+b101 *
+#6
+b110 *
+#7
+b10 "
+b10 (
+b111101 #
+b111101 )
+b10 $
+b10 &
+b111 *
+#8
+b1000 *

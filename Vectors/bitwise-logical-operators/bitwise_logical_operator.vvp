@@ -1,0 +1,95 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+S_0x7fe63e204300 .scope module, "testbench" "testbench" 2 16;
+ .timescale 0 0;
+v0x7fe63e215160_0 .var "a", 2 0;
+v0x7fe63e2151f0_0 .var "b", 2 0;
+v0x7fe63e215280_0 .net "out_not", 5 0, L_0x7fe63e215a00;  1 drivers
+v0x7fe63e215350_0 .net "out_or_bitwise", 2 0, L_0x7fe63e2154d0;  1 drivers
+v0x7fe63e215400_0 .net "out_or_logical", 0 0, L_0x7fe63e2157e0;  1 drivers
+S_0x7fe63e204470 .scope begin, "$ivl_for_loop0" "$ivl_for_loop0" 2 45, 2 45 0, S_0x7fe63e204300;
+ .timescale 0 0;
+v0x7fe63e2045e0_0 .var/i "i", 31 0;
+S_0x7fe63e214670 .scope module, "dut" "bitwise_logical_operators" 2 28, 2 1 0, S_0x7fe63e204300;
+ .timescale 0 0;
+    .port_info 0 /INPUT 3 "a";
+    .port_info 1 /INPUT 3 "b";
+    .port_info 2 /OUTPUT 3 "out_or_bitwise";
+    .port_info 3 /OUTPUT 1 "out_or_logical";
+    .port_info 4 /OUTPUT 6 "out_not";
+L_0x7fe63e2154d0 .functor OR 3, v0x7fe63e215160_0, v0x7fe63e2151f0_0, C4<000>, C4<000>;
+L_0x7fe63e2157e0 .functor OR 1, L_0x7fe63e215620, L_0x7fe63e215700, C4<0>, C4<0>;
+L_0x7fe63e215910 .functor NOT 3, v0x7fe63e2151f0_0, C4<000>, C4<000>, C4<000>;
+L_0x7fe63e215ae0 .functor NOT 3, v0x7fe63e215160_0, C4<000>, C4<000>, C4<000>;
+v0x7fe63e2148f0_0 .net *"_ivl_14", 2 0, L_0x7fe63e215910;  1 drivers
+v0x7fe63e214980_0 .net *"_ivl_19", 2 0, L_0x7fe63e215ae0;  1 drivers
+L_0x7fe63e363008 .functor BUFT 1, C4<000>, C4<0>, C4<0>, C4<0>;
+v0x7fe63e214a30_0 .net/2u *"_ivl_2", 2 0, L_0x7fe63e363008;  1 drivers
+v0x7fe63e214af0_0 .net *"_ivl_4", 0 0, L_0x7fe63e215620;  1 drivers
+L_0x7fe63e363050 .functor BUFT 1, C4<000>, C4<0>, C4<0>, C4<0>;
+v0x7fe63e214b90_0 .net/2u *"_ivl_6", 2 0, L_0x7fe63e363050;  1 drivers
+v0x7fe63e214c80_0 .net *"_ivl_8", 0 0, L_0x7fe63e215700;  1 drivers
+v0x7fe63e214d20_0 .net "a", 2 0, v0x7fe63e215160_0;  1 drivers
+v0x7fe63e214dd0_0 .net "b", 2 0, v0x7fe63e2151f0_0;  1 drivers
+v0x7fe63e214e80_0 .net "out_not", 5 0, L_0x7fe63e215a00;  alias, 1 drivers
+v0x7fe63e214f90_0 .net "out_or_bitwise", 2 0, L_0x7fe63e2154d0;  alias, 1 drivers
+v0x7fe63e215040_0 .net "out_or_logical", 0 0, L_0x7fe63e2157e0;  alias, 1 drivers
+L_0x7fe63e215620 .cmp/ne 3, v0x7fe63e215160_0, L_0x7fe63e363008;
+L_0x7fe63e215700 .cmp/ne 3, v0x7fe63e2151f0_0, L_0x7fe63e363050;
+L_0x7fe63e215a00 .concat8 [ 3 3 0 0], L_0x7fe63e215ae0, L_0x7fe63e215910;
+    .scope S_0x7fe63e204300;
+T_0 ;
+    %vpi_call 2 37 "$dumpfile", "bitwise_logical_operators.vcd" {0 0 0};
+    %vpi_call 2 38 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7fe63e204300 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x7fe63e204300;
+T_1 ;
+    %vpi_call 2 43 "$display", "Generating 8 random inputs" {0 0 0};
+    %fork t_1, S_0x7fe63e204470;
+    %jmp t_0;
+    .scope S_0x7fe63e204470;
+t_1 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x7fe63e2045e0_0, 0, 32;
+T_1.0 ;
+    %load/vec4 v0x7fe63e2045e0_0;
+    %cmpi/s 8, 0, 32;
+    %jmp/0xz T_1.1, 5;
+    %vpi_func 2 46 "$random" 32 {0 0 0};
+    %pad/s 3;
+    %store/vec4 v0x7fe63e215160_0, 0, 3;
+    %pushi/vec4 0, 0, 3;
+    %store/vec4 v0x7fe63e2151f0_0, 0, 3;
+    %delay 1, 0;
+    %vpi_call 2 49 "$display", "Input a = %h", v0x7fe63e215160_0 {0 0 0};
+    %vpi_call 2 50 "$display", "Input b = %h", v0x7fe63e2151f0_0 {0 0 0};
+    %vpi_call 2 51 "$display", "Output_or_bitwise = %h", v0x7fe63e215350_0 {0 0 0};
+    %vpi_call 2 52 "$display", "Output_or_logical = %h", v0x7fe63e215400_0 {0 0 0};
+    %vpi_call 2 53 "$display", "Output_not = %h", v0x7fe63e215280_0 {0 0 0};
+    %vpi_call 2 54 "$display", "\012" {0 0 0};
+    ; show_stmt_assign_vector: Get l-value for compressed += operand
+    %load/vec4 v0x7fe63e2045e0_0;
+    %pushi/vec4 1, 0, 32;
+    %add;
+    %store/vec4 v0x7fe63e2045e0_0, 0, 32;
+    %jmp T_1.0;
+T_1.1 ;
+    %end;
+    .scope S_0x7fe63e204300;
+t_0 %join;
+    %vpi_call 2 57 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "bitwise_logical_operator.v";

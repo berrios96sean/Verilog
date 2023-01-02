@@ -20,4 +20,6 @@ I am using Icarus Verilog for these projects and using GTKWave as the waveform v
 #### Vectors
 [Simple Vector](https://github.com/berrios96sean/Verilog/tree/main/Vectors/simple-vector)<br/>
 [Half Word Splitter](https://github.com/berrios96sean/Verilog/tree/main/Vectors/half_word_splitter)<br/>
-[Bit Vector Reversal](https://github.com/berrios96sean/Verilog/tree/main/Vectors/bit-vector-reversal)
+[Bit Vector Reversal](https://github.com/berrios96sean/Verilog/tree/main/Vectors/bit-vector-reversal)<br/>
+[Bitwise Logical Operators](https://github.com/berrios96sean/Verilog/tree/main/Vectors/bitwise-logical-operators)<br/>
+

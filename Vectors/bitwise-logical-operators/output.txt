@@ -1,0 +1,58 @@
+VCD info: dumpfile bitwise_logical_operators.vcd opened for output.
+Generating 8 random inputs
+Input a = 4
+Input b = 0
+Output_or_bitwise = 4
+Output_or_logical = 1
+Output_not = 3b
+
+
+Input a = 1
+Input b = 0
+Output_or_bitwise = 1
+Output_or_logical = 1
+Output_not = 3e
+
+
+Input a = 1
+Input b = 0
+Output_or_bitwise = 1
+Output_or_logical = 1
+Output_not = 3e
+
+
+Input a = 3
+Input b = 0
+Output_or_bitwise = 3
+Output_or_logical = 1
+Output_not = 3c
+
+
+Input a = 5
+Input b = 0
+Output_or_bitwise = 5
+Output_or_logical = 1
+Output_not = 3a
+
+
+Input a = 5
+Input b = 0
+Output_or_bitwise = 5
+Output_or_logical = 1
+Output_not = 3a
+
+
+Input a = 5
+Input b = 0
+Output_or_bitwise = 5
+Output_or_logical = 1
+Output_not = 3a
+
+
+Input a = 2
+Input b = 0
+Output_or_bitwise = 2
+Output_or_logical = 1
+Output_not = 3d
+
+
