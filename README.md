@@ -6,10 +6,10 @@ I am using Icarus Verilog for these projects and using GTKWave as the waveform v
 
 # Working gates with testbenches 
 
-xnor-gate
-simple-and-gate
-nor-gate
-inverter
-four-bit-comparator
-Vectors
-7458-Chip
+xnor-gate,
+simple-and-gate,
+nor-gate,
+inverter,
+four-bit-comparator,
+Vectors,
+7458-Chip,
