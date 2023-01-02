@@ -1,0 +1,95 @@
+$date
+	Sun Jan  1 18:48:21 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module simple_vector_tb $end
+$var wire 3 ! outv [2:0] $end
+$var wire 1 " o2 $end
+$var wire 1 # o1 $end
+$var wire 1 $ o0 $end
+$var reg 3 % vec [2:0] $end
+$scope module DUT $end
+$var wire 3 & outv [2:0] $end
+$var wire 3 ' vec [2:0] $end
+$var wire 1 " o2 $end
+$var wire 1 # o1 $end
+$var wire 1 $ o0 $end
+$upscope $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 ( i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx (
+b0 '
+b0 &
+b0 %
+0$
+0#
+0"
+b0 !
+$end
+#100000
+b0 (
+#101000
+1$
+b1 !
+b1 &
+b1 %
+b1 '
+b1 (
+#102000
+1#
+0$
+b10 !
+b10 &
+b10 %
+b10 '
+b10 (
+#103000
+1$
+b11 !
+b11 &
+b11 %
+b11 '
+b11 (
+#104000
+1"
+0#
+0$
+b100 !
+b100 &
+b100 %
+b100 '
+b100 (
+#105000
+1$
+b101 !
+b101 &
+b101 %
+b101 '
+b101 (
+#106000
+1#
+0$
+b110 !
+b110 &
+b110 %
+b110 '
+b110 (
+#107000
+1$
+b111 !
+b111 &
+b111 %
+b111 '
+b111 (
+#108000
+b1000 (
