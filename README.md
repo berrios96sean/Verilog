@@ -8,12 +8,12 @@ I am using Icarus Verilog for these projects and using GTKWave as the waveform v
 # Implemented gates with testbenches 
 
 #### Basics
-[XNOR Gate](https://github.com/berrios96sean/Verilog/tree/main/xnor-gate)<br/>
-[Simple AND Gate](https://github.com/berrios96sean/Verilog/tree/main/simple-and-gate)<br/>
-[NOR Gate](https://github.com/berrios96sean/Verilog/tree/main/norgate)<br/>
-[Inverter](https://github.com/berrios96sean/Verilog/tree/main/inverter)<br/>
-[Four Bit Comparator](https://github.com/berrios96sean/Verilog/tree/main/four-bit-comparator)<br/>
-[7458 Chip](https://github.com/berrios96sean/Verilog/tree/main/7458-Chip)<br/>
+[XNOR Gate](https://github.com/berrios96sean/Verilog/tree/main/Basics/xnor-gate)<br/>
+[Simple AND Gate](https://github.com/berrios96sean/Verilog/tree/main/Basics/simple-and-gate)<br/>
+[NOR Gate](https://github.com/berrios96sean/Verilog/tree/main/Basics/norgate)<br/>
+[Inverter](https://github.com/berrios96sean/Verilog/tree/main/Basics/inverter)<br/>
+[Four Bit Comparator](https://github.com/berrios96sean/Verilog/tree/main/Basics/four-bit-comparator)<br/>
+[7458 Chip](https://github.com/berrios96sean/Verilog/tree/main/Basics/7458-Chip)<br/>
 
 #### Vectors
 [Simple Vector](https://github.com/berrios96sean/Verilog/tree/main/Vectors/simple-vector)<br/>
