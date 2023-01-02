@@ -1,0 +1,66 @@
+$date
+	Mon Jan  2 13:01:30 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 1 ! out_n $end
+$var wire 1 " out $end
+$var reg 1 # a $end
+$var reg 1 $ b $end
+$var reg 1 % c $end
+$var reg 1 & d $end
+$scope module dut $end
+$var wire 1 # a $end
+$var wire 1 ' and_one $end
+$var wire 1 ( and_two $end
+$var wire 1 $ b $end
+$var wire 1 % c $end
+$var wire 1 & d $end
+$var wire 1 ) or_one $end
+$var wire 1 " out $end
+$var wire 1 ! out_n $end
+$upscope $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 * i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 *
+1)
+1(
+0'
+1&
+1%
+1$
+0#
+1"
+0!
+$end
+#1
+0(
+1'
+0&
+1#
+b1 *
+#2
+1&
+0%
+b10 *
+#3
+1!
+0"
+0)
+0'
+0&
+1%
+0$
+b11 *
+#4
+b100 *

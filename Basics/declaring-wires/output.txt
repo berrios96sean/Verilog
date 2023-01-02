@@ -1,0 +1,33 @@
+VCD info: dumpfile declaring_wires.vcd opened for output.
+Input a = 0
+Input b = 1
+Input c = 1
+Input d = 1
+Output = 1
+Output_N = 0
+
+
+Input a = 1
+Input b = 1
+Input c = 1
+Input d = 0
+Output = 1
+Output_N = 0
+
+
+Input a = 1
+Input b = 1
+Input c = 0
+Input d = 1
+Output = 1
+Output_N = 0
+
+
+Input a = 1
+Input b = 0
+Input c = 1
+Input d = 0
+Output = 0
+Output_N = 1
+
+
