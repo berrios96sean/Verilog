@@ -6,7 +6,7 @@ I am using Icarus Verilog for these projects and using GTKWave as the waveform v
 
 # Working gates with testbenches 
 
-xnor-gate,
+xnor-gate.
 simple-and-gate,
 nor-gate,
 inverter,
