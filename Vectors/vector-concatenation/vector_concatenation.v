@@ -42,17 +42,15 @@ module testbench;
 
     initial begin
 
-        e = 0; 
-        f = 0; 
         $display("Generating 8 random inputs");
         // Generate 8 random inputs and print the inputs and outputs
         for (integer i = 0; i < 8; i++) begin
-            a = 0;
-            b = 0;
-            c = 0;
-            d = 0;
-            e = i; 
-            f = i; 
+            a = $random;
+            b = $random;
+            c = $random;
+            d = $random;
+            e = $random; 
+            f = $random; 
             #1;  // Wait 1 time unit
             $display("Input a = %h", a);
             $display("Input b = %h", b);
