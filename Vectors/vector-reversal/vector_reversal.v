@@ -32,9 +32,9 @@ module testbench;
         for (integer i = 0; i < 8; i++) begin
             in = $random;
             #1;  // Wait 1 time unit
-            $display("Input = %h", in);
+            $display("Input = %b", in);
             $display("Output");
-            $display("Output = %h", out);
+            $display("Output = %b", out);
             $display("\n");
         end
         
