@@ -1,0 +1,45 @@
+$date
+	Tue Jan  3 13:21:12 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 8 ! out [7:0] $end
+$var reg 8 " in [7:0] $end
+$scope module dut $end
+$var wire 8 # in [7:0] $end
+$var wire 8 $ out [7:0] $end
+$upscope $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 % i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 %
+b10000 $
+b1000 #
+b1000 "
+b10000 !
+$end
+#1
+b1 %
+#2
+b10 %
+#3
+b11 %
+#4
+b100 %
+#5
+b101 %
+#6
+b110 %
+#7
+b111 %
+#8
+b1000 %
