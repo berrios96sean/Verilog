@@ -31,7 +31,6 @@ module testbench;
         // Generate 8 random inputs and print the inputs and outputs
         for (integer i = 0; i < 8; i++) begin
             in = $random;
-            out = $random;
             #1;  // Wait 1 time unit
             $display("Input = %h", in);
             $display("Output");
