@@ -16,41 +16,55 @@ endmodule
 module testbench;
     
     // Inputs
-    reg [2:0] a;
-    reg [2:0] b; 
+    reg [4:0] a,b,c,d,e,f;
 
     // Outputs
-    wire [2:0] out_or_bitwise;
-    wire out_or_logical;
-    wire [5:0] out_not;
+    wire [7:0] w,x,y,z;
     
     // Instantiate the module
-    bitwise_logical_operators dut (
-        .a(a),
-        .b(b),
-        .out_or_bitwise(out_or_bitwise),
-        .out_or_logical(out_or_logical),
-        .out_not(out_not)
+    vector_concatenation dut (
+    .a(a),
+    .b(b),
+    .c(c),
+    .d(d),
+    .e(e),
+    .f(f),
+    .w(w),
+    .x(x),
+    .y(y),
+    .z(z)
     );
     
     initial begin
-        $dumpfile("bitwise_logical_operators.vcd");
+        $dumpfile("vector_concatenation.vcd");
         $dumpvars(0, testbench);
     end
 
     initial begin
 
+        e = 0; 
+        f = 0; 
         $display("Generating 8 random inputs");
         // Generate 8 random inputs and print the inputs and outputs
         for (integer i = 0; i < 8; i++) begin
-            a = $random;
-            b = 0; 
+            a = 0;
+            b = 0;
+            c = 0;
+            d = 0;
+            e = i; 
+            f = i; 
             #1;  // Wait 1 time unit
             $display("Input a = %h", a);
             $display("Input b = %h", b);
-            $display("Output_or_bitwise = %h", out_or_bitwise);
-            $display("Output_or_logical = %h", out_or_logical);
-            $display("Output_not = %h", out_not);
+            $display("Input c = %h", c);
+            $display("Input d = %h", d);
+            $display("Input e = %h", e);
+            $display("Input f = %h", f);
+            $display("Output");
+            $display("Output_w = %h", w);
+            $display("Output_x = %h", x);
+            $display("Output_y = %h", y);
+            $display("Output_z = %h", z);
             $display("\n");
         end
         
