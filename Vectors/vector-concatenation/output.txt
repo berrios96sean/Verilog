@@ -1,0 +1,106 @@
+VCD info: dumpfile vector_concatenation.vcd opened for output.
+Generating 8 random inputs
+Input a = 04
+Input b = 01
+Input c = 09
+Input d = 03
+Input e = 0d
+Input f = 0d
+Output
+Output_w = 20
+Output_x = 52
+Output_y = 36
+Output_z = b7
+
+
+Input a = 05
+Input b = 12
+Input c = 01
+Input d = 0d
+Input e = 16
+Input f = 1d
+Output
+Output_w = 2c
+Output_x = 82
+Output_y = db
+Output_z = 77
+
+
+Input a = 0d
+Input b = 0c
+Input c = 19
+Input d = 06
+Input e = 05
+Input f = 0a
+Output
+Output_w = 6b
+Output_x = 32
+Output_y = 62
+Output_z = ab
+
+
+Input a = 05
+Input b = 17
+Input c = 12
+Input d = 0f
+Input e = 12
+Input f = 0e
+Output
+Output_w = 2d
+Output_x = e4
+Output_y = f9
+Output_z = 3b
+
+
+Input a = 08
+Input b = 05
+Input c = 1c
+Input d = 1d
+Input e = 0d
+Input f = 05
+Output
+Output_w = 41
+Output_x = 79
+Output_y = d6
+Output_z = 97
+
+
+Input a = 03
+Input b = 0a
+Input c = 00
+Input d = 00
+Input e = 0a
+Input f = 1d
+Output
+Output_w = 1a
+Output_x = 80
+Output_y = 05
+Output_z = 77
+
+
+Input a = 16
+Input b = 13
+Input c = 0d
+Input d = 13
+Input e = 0b
+Input f = 15
+Output
+Output_w = b4
+Output_x = db
+Output_y = 35
+Output_z = d7
+
+
+Input a = 02
+Input b = 0e
+Input c = 1d
+Input d = 0f
+Input e = 03
+Input f = 0a
+Output
+Output_w = 13
+Output_x = ba
+Output_y = f1
+Output_z = ab
+
+
