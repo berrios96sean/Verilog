@@ -1,0 +1,42 @@
+VCD info: dumpfile vector_reversal.vcd opened for output.
+Generating 8 random inputs
+Input = 24
+Output
+Output = 24
+
+
+Input = 81
+Output
+Output = 81
+
+
+Input = 09
+Output
+Output = 90
+
+
+Input = 63
+Output
+Output = c6
+
+
+Input = 0d
+Output
+Output = b0
+
+
+Input = 8d
+Output
+Output = b1
+
+
+Input = 65
+Output
+Output = a6
+
+
+Input = 12
+Output
+Output = 48
+
+
