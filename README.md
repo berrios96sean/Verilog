@@ -24,4 +24,5 @@ I am using Icarus Verilog for these projects and using GTKWave as the waveform v
 [Bitwise Logical Operators](https://github.com/berrios96sean/Verilog/tree/main/Vectors/bitwise-logical-operators)<br/>
 [Four Input Gates](https://github.com/berrios96sean/Verilog/tree/main/Vectors/four-input-gates)<br/>
 [Vector Concatenation](https://github.com/berrios96sean/Verilog/tree/main/Vectors/vector-concatenation)<br/>
+[Vector Reversal](https://github.com/berrios96sean/Verilog/tree/main/Vectors/vector-reversal)<br/>
 
