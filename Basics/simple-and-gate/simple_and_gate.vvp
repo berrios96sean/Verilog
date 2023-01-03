@@ -1,0 +1,66 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+S_0x7fe882f0b460 .scope module, "and_gate_tb" "and_gate_tb" 2 7;
+ .timescale 0 0;
+v0x7fe882f1b770_0 .var "a", 0 0;
+v0x7fe882f1b810_0 .var "b", 0 0;
+v0x7fe882f1b8c0_0 .net "y", 0 0, L_0x7fe882f1b990;  1 drivers
+S_0x7fe882f0b5d0 .scope module, "and_gate_instance" "and_gate" 2 15, 2 2 0, S_0x7fe882f0b460;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x7fe882f1b990 .functor AND 1, v0x7fe882f1b770_0, v0x7fe882f1b810_0, C4<1>, C4<1>;
+v0x7fe882f0b740_0 .net "a", 0 0, v0x7fe882f1b770_0;  1 drivers
+v0x7fe882f1b5d0_0 .net "b", 0 0, v0x7fe882f1b810_0;  1 drivers
+v0x7fe882f1b670_0 .net "y", 0 0, L_0x7fe882f1b990;  alias, 1 drivers
+    .scope S_0x7fe882f0b460;
+T_0 ;
+    %vpi_call 2 22 "$dumpfile", "<waveform_file>.vcd" {0 0 0};
+    %vpi_call 2 23 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7fe882f0b460 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x7fe882f0b460;
+T_1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fe882f1b770_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fe882f1b810_0, 0, 1;
+    %vpi_call 2 31 "$display", "Input: a = %b, b = %b", v0x7fe882f1b770_0, v0x7fe882f1b810_0 {0 0 0};
+    %delay 5, 0;
+    %vpi_call 2 35 "$display", "Output: y = %b", v0x7fe882f1b8c0_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fe882f1b770_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fe882f1b810_0, 0, 1;
+    %vpi_call 2 40 "$display", "Input: a = %b, b = %b", v0x7fe882f1b770_0, v0x7fe882f1b810_0 {0 0 0};
+    %delay 5, 0;
+    %vpi_call 2 44 "$display", "Output: y = %b", v0x7fe882f1b8c0_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fe882f1b770_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fe882f1b810_0, 0, 1;
+    %vpi_call 2 49 "$display", "Input: a = %b, b = %b", v0x7fe882f1b770_0, v0x7fe882f1b810_0 {0 0 0};
+    %delay 5, 0;
+    %vpi_call 2 53 "$display", "Output: y = %b", v0x7fe882f1b8c0_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fe882f1b770_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fe882f1b810_0, 0, 1;
+    %vpi_call 2 58 "$display", "Input: a = %b, b = %b", v0x7fe882f1b770_0, v0x7fe882f1b810_0 {0 0 0};
+    %delay 5, 0;
+    %vpi_call 2 62 "$display", "Output: y = %b", v0x7fe882f1b8c0_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "simple_and_gate.v";

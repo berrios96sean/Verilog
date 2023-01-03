@@ -1,0 +1,9 @@
+VCD info: dumpfile <waveform_file>.vcd opened for output.
+Input: a = 0, b = 0
+Output: y = 0
+Input: a = 0, b = 1
+Output: y = 0
+Input: a = 1, b = 0
+Output: y = 0
+Input: a = 1, b = 1
+Output: y = 1
