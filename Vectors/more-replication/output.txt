@@ -1,0 +1,74 @@
+VCD info: dumpfile more_replication.vcd opened for output.
+Generating 8 random inputs
+Input a = 0
+Input b = 1
+Input c = 1
+Input d = 1
+Input e = 1
+Output
+Output = 107bdef
+
+
+Input a = 1
+Input b = 1
+Input c = 0
+Input d = 1
+Input e = 1
+Output
+Output = 1bd937b
+
+
+Input a = 0
+Input b = 1
+Input c = 1
+Input d = 0
+Input e = 1
+Output
+Output = 126b64d
+
+
+Input a = 0
+Input b = 1
+Input c = 0
+Input d = 1
+Input e = 1
+Output
+Output = 145d16b
+
+
+Input a = 0
+Input b = 1
+Input c = 0
+Input d = 0
+Input e = 0
+Output
+Output = 1745ef7
+
+
+Input a = 1
+Input b = 0
+Input c = 1
+Input d = 1
+Input e = 1
+Output
+Output = 1745ef7
+
+
+Input a = 1
+Input b = 0
+Input c = 0
+Input d = 0
+Input e = 0
+Output
+Output = 107bdef
+
+
+Input a = 1
+Input b = 0
+Input c = 1
+Input d = 1
+Input e = 1
+Output
+Output = 1745ef7
+
+
