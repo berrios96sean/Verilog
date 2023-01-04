@@ -28,3 +28,4 @@ I am using Icarus Verilog for these projects and using GTKWave as the waveform v
 [Replication Operator](https://github.com/berrios96sean/Verilog/tree/main/Vectors/replication-operator)<br/>
 [More Replication](https://github.com/berrios96sean/Verilog/tree/main/Vectors/more-replication)<br/>
 
+#### Module Hierarchy 
