@@ -10,7 +10,7 @@ I am using Icarus Verilog for these projects and using GTKWave as the waveform v
 #### Basics
 * [XNOR Gate](https://github.com/berrios96sean/Verilog/tree/main/Basics/xnor-gate)<br/>
 *`xnor-gate.v`*<br/>
-`xnor-gate.vcd`
+*`xnor-gate.vcd`*
 * [Simple AND Gate](https://github.com/berrios96sean/Verilog/tree/main/Basics/simple-and-gate)<br/>
 * [NOR Gate](https://github.com/berrios96sean/Verilog/tree/main/Basics/nor-gate)<br/>
 * [Inverter](https://github.com/berrios96sean/Verilog/tree/main/Basics/inverter)<br/>
