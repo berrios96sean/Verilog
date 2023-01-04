@@ -17,13 +17,13 @@ module testbench;
     wire [31:0] out;
     
     // Instantiate the module
-    vector_concatenation dut (
+    replication_operator dut (
     .in(in),
     .out(out)
     );
     
     initial begin
-        $dumpfile("vector_concatenation.vcd");
+        $dumpfile("replication_operator.vcd");
         $dumpvars(0, testbench);
     end
 
@@ -32,24 +32,11 @@ module testbench;
         $display("Generating 8 random inputs");
         // Generate 8 random inputs and print the inputs and outputs
         for (integer i = 0; i < 8; i++) begin
-            a = $random;
-            b = $random;
-            c = $random;
-            d = $random;
-            e = $random; 
-            f = $random; 
+            in = $random;
             #1;  // Wait 1 time unit
-            $display("Input a = %h", a);
-            $display("Input b = %h", b);
-            $display("Input c = %h", c);
-            $display("Input d = %h", d);
-            $display("Input e = %h", e);
-            $display("Input f = %h", f);
+            $display("Input = %h", in);
             $display("Output");
-            $display("Output_w = %h", w);
-            $display("Output_x = %h", x);
-            $display("Output_y = %h", y);
-            $display("Output_z = %h", z);
+            $display("Output = %h", out);
             $display("\n");
         end
         
