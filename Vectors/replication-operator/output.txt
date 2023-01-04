@@ -1,0 +1,42 @@
+VCD info: dumpfile replication_operator.vcd opened for output.
+Generating 8 random inputs
+Input = 24
+Output
+Output = 00000024
+
+
+Input = 81
+Output
+Output = ffffff81
+
+
+Input = 09
+Output
+Output = 00000009
+
+
+Input = 63
+Output
+Output = 00000063
+
+
+Input = 0d
+Output
+Output = 0000000d
+
+
+Input = 8d
+Output
+Output = ffffff8d
+
+
+Input = 65
+Output
+Output = 00000065
+
+
+Input = 12
+Output
+Output = 00000012
+
+
