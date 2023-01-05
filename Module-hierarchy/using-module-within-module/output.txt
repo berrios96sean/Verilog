@@ -1,0 +1,25 @@
+VCD info: dumpfile top_module.vcd opened for output.
+Inputs
+a = 0
+b = 0
+Output
+Out = 0
+
+Inputs
+a = 0
+b = 1
+Output
+Out = 1
+
+Inputs
+a = 1
+b = 0
+Output
+Out = 1
+
+Inputs
+a = 1
+b = 1
+Output
+Out = 1
+
