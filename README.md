@@ -29,3 +29,4 @@ I am using Icarus Verilog for these projects and using GTKWave as the waveform v
 * [More Replication](https://github.com/berrios96sean/Verilog/tree/main/Vectors/more-replication)<br/>
 
 #### Module Hierarchy 
+* [Module Within Module](https://github.com/berrios96sean/Verilog/tree/main/Module-hierarchy/using-module-within-module)<br/>
