@@ -39,7 +39,8 @@ module testbench;
     initial begin
 
 
-        
+        $display("Output 1 is an AND gate with (a & b) as input");
+        $display("Output 2 is an OR gate with (c | d) as input");
         #1;
         a = 1'b0;
         b = 1'b0;
