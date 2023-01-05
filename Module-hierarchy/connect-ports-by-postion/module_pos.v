@@ -16,20 +16,23 @@ endmodule
 module testbench;
     
     // Inputs
-    reg a,b;
+    reg a,b,c,d;
 
     // Outputs
-    wire out;
+    wire out1,out2;
     
     // Instantiate the module
     top_module dut (
     .a(a),
     .b(b),
-    .out(out)
+    .c(c), 
+    .d(d),
+    .out1(out1),
+    .out2(out2)
     );
     
     initial begin
-        $dumpfile("top_module.vcd");
+        $dumpfile("module_pos.vcd");
         $dumpvars(0, testbench);
     end
 
@@ -39,43 +42,63 @@ module testbench;
         
         #1;
         a = 1'b0;
-        b = 1'b0; 
+        b = 1'b0;
+        c = 1'b0;
+        d = 1'b0;
         #5;
         $display("Inputs");
         $display("a = %b",a);
         $display("b = %b",b);
+        $display("c = %b",c);
+        $display("d = %b",d);
         $display("Output");
-        $display("Out = %b",out);
+        $display("Out1 = %b",out1);
+        $display("Out2 = %b",out2);
         $display();
 
         a = 1'b0;
-        b = 1'b1; 
+        b = 1'b1;
+        c = 1'b0;
+        d = 1'b1; 
         #5;
         $display("Inputs");
         $display("a = %b",a);
         $display("b = %b",b);
+        $display("c = %b",c);
+        $display("d = %b",d);
         $display("Output");
-        $display("Out = %b",out);
+        $display("Out1 = %b",out1);
+        $display("Out2 = %b",out2);
         $display();
 
         a = 1'b1;
-        b = 1'b0; 
+        b = 1'b0;
+        c = 1'b1;
+        d = 1'b0; 
         #5;
         $display("Inputs");
         $display("a = %b",a);
         $display("b = %b",b);
+        $display("c = %b",c);
+        $display("d = %b",d);
         $display("Output");
-        $display("Out = %b",out);
+        $display("Out1 = %b",out1);
+        $display("Out2 = %b",out2);
         $display();
 
         a = 1'b1;
-        b = 1'b1; 
+        b = 1'b1;
+        c = 1'b1;
+        d = 1'b1; 
         #5;
         $display("Inputs");
         $display("a = %b",a);
         $display("b = %b",b);
+        $display("c = %b",c);
+        $display("d = %b",d);
         $display("Output");
-        $display("Out = %b",out);
+        $display("Out1 = %b",out1);
+        $display("Out2 = %b",out2);
         $display();
 
         
