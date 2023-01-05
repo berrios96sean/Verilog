@@ -1,0 +1,93 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+S_0x7fca7c006340 .scope module, "testbench" "testbench" 2 9;
+ .timescale 0 0;
+v0x7fca7c01f510_0 .var "a", 0 0;
+v0x7fca7c01f5e0_0 .var "b", 0 0;
+v0x7fca7c01f6b0_0 .net "out", 0 0, L_0x7fca7c01f780;  1 drivers
+S_0x7fca7c0064b0 .scope module, "dut" "top_module" 2 18, 2 3 0, S_0x7fca7c006340;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "out";
+v0x7fca7c01f2d0_0 .net "a", 0 0, v0x7fca7c01f510_0;  1 drivers
+v0x7fca7c01f370_0 .net "b", 0 0, v0x7fca7c01f5e0_0;  1 drivers
+v0x7fca7c01f420_0 .net "out", 0 0, L_0x7fca7c01f780;  alias, 1 drivers
+S_0x7fca7c006ff0 .scope module, "instance1" "mod_a" 2 5, 3 1 0, S_0x7fca7c0064b0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "in1";
+    .port_info 1 /INPUT 1 "in2";
+    .port_info 2 /OUTPUT 1 "out";
+L_0x7fca7c01f780 .functor OR 1, v0x7fca7c01f510_0, v0x7fca7c01f5e0_0, C4<0>, C4<0>;
+v0x7fca7c006b60_0 .net "in1", 0 0, v0x7fca7c01f510_0;  alias, 1 drivers
+v0x7fca7c01f130_0 .net "in2", 0 0, v0x7fca7c01f5e0_0;  alias, 1 drivers
+v0x7fca7c01f1d0_0 .net "out", 0 0, L_0x7fca7c01f780;  alias, 1 drivers
+    .scope S_0x7fca7c006340;
+T_0 ;
+    %vpi_call 2 25 "$dumpfile", "top_module.vcd" {0 0 0};
+    %vpi_call 2 26 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7fca7c006340 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x7fca7c006340;
+T_1 ;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fca7c01f510_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fca7c01f5e0_0, 0, 1;
+    %delay 5, 0;
+    %vpi_call 2 35 "$display", "Inputs" {0 0 0};
+    %vpi_call 2 36 "$display", "a = %b", v0x7fca7c01f510_0 {0 0 0};
+    %vpi_call 2 37 "$display", "b = %b", v0x7fca7c01f5e0_0 {0 0 0};
+    %vpi_call 2 38 "$display", "Output" {0 0 0};
+    %vpi_call 2 39 "$display", "Out = %b", v0x7fca7c01f6b0_0 {0 0 0};
+    %vpi_call 2 40 "$display" {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fca7c01f510_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fca7c01f5e0_0, 0, 1;
+    %delay 5, 0;
+    %vpi_call 2 45 "$display", "Inputs" {0 0 0};
+    %vpi_call 2 46 "$display", "a = %b", v0x7fca7c01f510_0 {0 0 0};
+    %vpi_call 2 47 "$display", "b = %b", v0x7fca7c01f5e0_0 {0 0 0};
+    %vpi_call 2 48 "$display", "Output" {0 0 0};
+    %vpi_call 2 49 "$display", "Out = %b", v0x7fca7c01f6b0_0 {0 0 0};
+    %vpi_call 2 50 "$display" {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fca7c01f510_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fca7c01f5e0_0, 0, 1;
+    %delay 5, 0;
+    %vpi_call 2 55 "$display", "Inputs" {0 0 0};
+    %vpi_call 2 56 "$display", "a = %b", v0x7fca7c01f510_0 {0 0 0};
+    %vpi_call 2 57 "$display", "b = %b", v0x7fca7c01f5e0_0 {0 0 0};
+    %vpi_call 2 58 "$display", "Output" {0 0 0};
+    %vpi_call 2 59 "$display", "Out = %b", v0x7fca7c01f6b0_0 {0 0 0};
+    %vpi_call 2 60 "$display" {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fca7c01f510_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fca7c01f5e0_0, 0, 1;
+    %delay 5, 0;
+    %vpi_call 2 65 "$display", "Inputs" {0 0 0};
+    %vpi_call 2 66 "$display", "a = %b", v0x7fca7c01f510_0 {0 0 0};
+    %vpi_call 2 67 "$display", "b = %b", v0x7fca7c01f5e0_0 {0 0 0};
+    %vpi_call 2 68 "$display", "Output" {0 0 0};
+    %vpi_call 2 69 "$display", "Out = %b", v0x7fca7c01f6b0_0 {0 0 0};
+    %vpi_call 2 70 "$display" {0 0 0};
+    %vpi_call 2 74 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "top_module.v";
+    "./mod_a.v";
