@@ -1,0 +1,139 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+S_0x7fa1d6a04270 .scope module, "testbench" "testbench" 2 16;
+ .timescale 0 0;
+v0x7fa1d680d140_0 .var "a", 0 0;
+v0x7fa1d680d220_0 .var "b", 0 0;
+v0x7fa1d680d300_0 .var "c", 0 0;
+v0x7fa1d680d3d0_0 .var "d", 0 0;
+v0x7fa1d680d4a0_0 .net "out1", 0 0, L_0x7fa1d680d680;  1 drivers
+v0x7fa1d680d5b0_0 .net "out2", 0 0, L_0x7fa1d680d6f0;  1 drivers
+S_0x7fa1d6a043e0 .scope module, "dut" "top_module" 2 25, 2 3 0, S_0x7fa1d6a04270;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "c";
+    .port_info 3 /INPUT 1 "d";
+    .port_info 4 /OUTPUT 1 "out1";
+    .port_info 5 /OUTPUT 1 "out2";
+v0x7fa1d680ccd0_0 .net "a", 0 0, v0x7fa1d680d140_0;  1 drivers
+v0x7fa1d680cd70_0 .net "b", 0 0, v0x7fa1d680d220_0;  1 drivers
+v0x7fa1d680ce20_0 .net "c", 0 0, v0x7fa1d680d300_0;  1 drivers
+v0x7fa1d680cef0_0 .net "d", 0 0, v0x7fa1d680d3d0_0;  1 drivers
+v0x7fa1d680cfa0_0 .net "out1", 0 0, L_0x7fa1d680d680;  alias, 1 drivers
+v0x7fa1d680d070_0 .net "out2", 0 0, L_0x7fa1d680d6f0;  alias, 1 drivers
+S_0x7fa1d6a04660 .scope module, "moddef" "mod_a" 2 12, 3 1 0, S_0x7fa1d6a043e0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "out1";
+    .port_info 1 /OUTPUT 1 "out2";
+    .port_info 2 /INPUT 1 "a";
+    .port_info 3 /INPUT 1 "b";
+    .port_info 4 /INPUT 1 "c";
+    .port_info 5 /INPUT 1 "d";
+L_0x7fa1d680d680 .functor AND 1, v0x7fa1d680d140_0, v0x7fa1d680d220_0, C4<1>, C4<1>;
+L_0x7fa1d680d6f0 .functor OR 1, v0x7fa1d680d300_0, v0x7fa1d680d3d0_0, C4<0>, C4<0>;
+v0x7fa1d6a048e0_0 .net "a", 0 0, v0x7fa1d680d140_0;  alias, 1 drivers
+v0x7fa1d680c8c0_0 .net "b", 0 0, v0x7fa1d680d220_0;  alias, 1 drivers
+v0x7fa1d680c970_0 .net "c", 0 0, v0x7fa1d680d300_0;  alias, 1 drivers
+v0x7fa1d680ca20_0 .net "d", 0 0, v0x7fa1d680d3d0_0;  alias, 1 drivers
+v0x7fa1d680cac0_0 .net "out1", 0 0, L_0x7fa1d680d680;  alias, 1 drivers
+v0x7fa1d680cba0_0 .net "out2", 0 0, L_0x7fa1d680d6f0;  alias, 1 drivers
+    .scope S_0x7fa1d6a04270;
+T_0 ;
+    %vpi_call 2 35 "$dumpfile", "module_pos.vcd" {0 0 0};
+    %vpi_call 2 36 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7fa1d6a04270 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x7fa1d6a04270;
+T_1 ;
+    %vpi_call 2 42 "$display", "Output 1 is an AND gate with (a & b) as input" {0 0 0};
+    %vpi_call 2 43 "$display", "Output 2 is an OR gate with (c | d) as input" {0 0 0};
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fa1d680d140_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fa1d680d220_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fa1d680d300_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fa1d680d3d0_0, 0, 1;
+    %delay 5, 0;
+    %vpi_call 2 50 "$display", "Inputs" {0 0 0};
+    %vpi_call 2 51 "$display", "a = %b", v0x7fa1d680d140_0 {0 0 0};
+    %vpi_call 2 52 "$display", "b = %b", v0x7fa1d680d220_0 {0 0 0};
+    %vpi_call 2 53 "$display", "c = %b", v0x7fa1d680d300_0 {0 0 0};
+    %vpi_call 2 54 "$display", "d = %b", v0x7fa1d680d3d0_0 {0 0 0};
+    %vpi_call 2 55 "$display", "Output" {0 0 0};
+    %vpi_call 2 56 "$display", "Out1 = %b", v0x7fa1d680d4a0_0 {0 0 0};
+    %vpi_call 2 57 "$display", "Out2 = %b", v0x7fa1d680d5b0_0 {0 0 0};
+    %vpi_call 2 58 "$display" {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fa1d680d140_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fa1d680d220_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fa1d680d300_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fa1d680d3d0_0, 0, 1;
+    %delay 5, 0;
+    %vpi_call 2 65 "$display", "Inputs" {0 0 0};
+    %vpi_call 2 66 "$display", "a = %b", v0x7fa1d680d140_0 {0 0 0};
+    %vpi_call 2 67 "$display", "b = %b", v0x7fa1d680d220_0 {0 0 0};
+    %vpi_call 2 68 "$display", "c = %b", v0x7fa1d680d300_0 {0 0 0};
+    %vpi_call 2 69 "$display", "d = %b", v0x7fa1d680d3d0_0 {0 0 0};
+    %vpi_call 2 70 "$display", "Output" {0 0 0};
+    %vpi_call 2 71 "$display", "Out1 = %b", v0x7fa1d680d4a0_0 {0 0 0};
+    %vpi_call 2 72 "$display", "Out2 = %b", v0x7fa1d680d5b0_0 {0 0 0};
+    %vpi_call 2 73 "$display" {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fa1d680d140_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fa1d680d220_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fa1d680d300_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fa1d680d3d0_0, 0, 1;
+    %delay 5, 0;
+    %vpi_call 2 80 "$display", "Inputs" {0 0 0};
+    %vpi_call 2 81 "$display", "a = %b", v0x7fa1d680d140_0 {0 0 0};
+    %vpi_call 2 82 "$display", "b = %b", v0x7fa1d680d220_0 {0 0 0};
+    %vpi_call 2 83 "$display", "c = %b", v0x7fa1d680d300_0 {0 0 0};
+    %vpi_call 2 84 "$display", "d = %b", v0x7fa1d680d3d0_0 {0 0 0};
+    %vpi_call 2 85 "$display", "Output" {0 0 0};
+    %vpi_call 2 86 "$display", "Out1 = %b", v0x7fa1d680d4a0_0 {0 0 0};
+    %vpi_call 2 87 "$display", "Out2 = %b", v0x7fa1d680d5b0_0 {0 0 0};
+    %vpi_call 2 88 "$display" {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fa1d680d140_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fa1d680d220_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fa1d680d300_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fa1d680d3d0_0, 0, 1;
+    %delay 5, 0;
+    %vpi_call 2 95 "$display", "Inputs" {0 0 0};
+    %vpi_call 2 96 "$display", "a = %b", v0x7fa1d680d140_0 {0 0 0};
+    %vpi_call 2 97 "$display", "b = %b", v0x7fa1d680d220_0 {0 0 0};
+    %vpi_call 2 98 "$display", "c = %b", v0x7fa1d680d300_0 {0 0 0};
+    %vpi_call 2 99 "$display", "d = %b", v0x7fa1d680d3d0_0 {0 0 0};
+    %vpi_call 2 100 "$display", "Output" {0 0 0};
+    %vpi_call 2 101 "$display", "Out1 = %b", v0x7fa1d680d4a0_0 {0 0 0};
+    %vpi_call 2 102 "$display", "Out2 = %b", v0x7fa1d680d5b0_0 {0 0 0};
+    %vpi_call 2 103 "$display" {0 0 0};
+    %vpi_call 2 107 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "module_pos.v";
+    "./mod_a.v";
