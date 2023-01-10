@@ -31,3 +31,4 @@ I am using Icarus Verilog for these projects and using GTKWave as the waveform v
 #### Module Hierarchy 
 * [Module Within Module](https://github.com/berrios96sean/Verilog/tree/main/Module-hierarchy/using-module-within-module)<br/>
 * [Connecting Ports By Position](https://github.com/berrios96sean/Verilog/tree/main/Module-hierarchy/connect-ports-by-position)<br/>
+* [Connecting Ports By Name](https://github.com/berrios96sean/Verilog/tree/main/Module-hierarchy/connect-ports-by-name)<br/>
